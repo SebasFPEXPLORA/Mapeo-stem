@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<title>Instituciones Educativas Ser + STEM</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link rel="stylesheet" href="mapa.css">
+
+<body>
+    <div id="map"></div>
+
+    <div class="button">
+        <img id="bInicio" src="assets/mapa/Inicio.png" onclick="location.href='index.html'">
+        <img id="bSerStem" src="assets/mapa/quees.png" onclick=toogleIntroductorio2();>
+        <img id="bParticipantes" src="assets/mapa/participante.png" onclick=toogleIntroductorio2();>
+        <img id="bContactanos" src="assets/mapa/contactanos.png" onclick=toogleIntroductorio2();>
+        <img id="bBusqueda" src="assets/mapa/buscar.png" onclick=toogleIntroductorio2();>
+    </div>
+
+    <div class="button2">
+        <img id="bEstadisticas" src="assets/mapa/estadisticas.png" onclick="location.href='estadisticas.html'">
+        <img id="bExploratorio" src="assets/mapa/Exploratorio.png" onclick=toogleExploratorio();>
+        <img id="bIntroductorio" src="assets/mapa/introductorio.png" onclick=toogleIntroductorio();>
+        <img id="bIntermedio" src="assets/mapa/intermedio.png" onclick=toogleIntermedio();>
+        <img id="bAvanzado" src="assets/mapa/avanzado.png" onclick=toogleAvanzado();>
+    </div>
+
+    <div class="button3">
+        <img id="bMas" src="assets/mapa/mas.png" onclick=zoomMas();>
+        <img id="bMenos" src="assets/mapa/menos.png" onclick=zoomMenos();>
+    </div>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="src/lugares.js"></script>
+    <script src="src/instituciones.js"></script>
+    <script src="src/map.js"></script>
+</body>
+
+</html>

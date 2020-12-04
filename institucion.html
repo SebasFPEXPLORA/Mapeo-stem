@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<title>Institución Educativa</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link rel="stylesheet" href="index.css">
+ 
+<body>
+    <div class="container21">
+        <div><img class="bvolver" src="assets/institucion/volver.png" onclick="location.href='mapa.html'"></div>
+        
+        <div id="institucion">Institución</div>
+        <div>Rector</div>
+        <div id="rector">Rector</div>
+        <div>Correo electrónico</div>
+        <div id="email">email</div>
+        <div><img class="nivel" id="nivelimg" src="assets/institucion/nivel1.png"></div>
+
+        <canvas id="radar-chart" width="400" height="100"></canvas>
+        
+        <div><img class="bdiagnostico" src="assets/institucion/diagnostico.png"></div>
+        <img class="brecomendaciones" src="assets/institucion/recomendaciones.png" onclick=openRecomendaciones();>
+        <img class="bexperiencias" src="assets/institucion/experiencias.png" onclick=openExperiencias();>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+        integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+        crossorigin="anonymous"></script>
+    <script src="src/instituciones.js"></script>
+    <script src="src/institucion.js"></script>
+
+</body>
+
+</html>
