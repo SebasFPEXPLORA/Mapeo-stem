@@ -10,15 +10,11 @@ html, body {
     font-size: 32px;
 }
 
-/* font-family: 'Montserrat', sans-serif; */
-
 .container1 {
     position: relative;
     left: 50%;
     margin-left: -427px;
-    font-family: 'Montserrat', sans-serif;
     font-size: 32px;
-
 }
 
 .titulo {

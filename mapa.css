@@ -39,6 +39,22 @@ html, body, #map {
     cursor: pointer;
 }
 
+input[type=text], select {
+    z-index: 900;
+    position: absolute;
+    top: 3px;
+    left: 86%;
+    cursor: pointer;
+    width:  140px;
+    padding: 0px 0px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 0px solid #ccc;
+    border-radius: 0px;
+    /* box-sizing: border-box; */
+  }
+
+
 @media screen and (max-width: 1100px) {
     .button, .button2 {
         left: 0%;

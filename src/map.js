@@ -138,3 +138,19 @@ function zoomMenos() {
     map.setZoom(map.getZoom() - 1);
 }
 
+function buscar() {
+    var palabra = (document.getElementById("fname").value).toLowerCase();
+    console.log(palabra);
+    if (palabra.length > 0) {
+        // document.getElementById('bExploratorio').src = "assets/mapa/exploratorio_on.png";
+        // document.getElementById('bIntroductorio').src = "assets/mapa/introductorio_on.png";
+        // document.getElementById('bIntermedio').src = "assets/mapa/intermedio_on.png";
+        // document.getElementById('bAvanzado').src = "assets/mapa/avanzado_on.png";
+        for (i = 0; i < Institucion.length; i++) {
+            if ((Institucion[i][0].toLowerCase()).includes(palabra))
+                this.map.addLayer(instituciones[i]);
+            else
+                map.removeLayer(instituciones[i]);
+        }
+    }
+}

@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<title>Estadísticas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link rel="stylesheet" href="estadisticas.css">
+
+<body>
+    <div class="container1">
+
+        <div class="container21">
+            <div><img class="bvolver" src="assets/institucion/volver.png" onclick="location.href='mapa.html'"></div>
+            
+            <div id="institucion">Relación instituciones y niveles Ser+STEM</div>
+            <div id="numinstituciones">080</div>
+            <div>instituciones</div>
+            <div id="numexperiencias">020</div>
+            <div>Experiencias</div> 
+    
+            <canvas id="pie-chart" width="400" height="100"></canvas>
+            <!-- <canvas id="pie-chart" width="1200" height="450"></canvas> -->
+            
+            <div>
+            <img class="bexperiencias" src="assets/estadisticas/elige_comuna.png" onclick=elegirComuna();>
+        </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
+    <script src="src/instituciones.js"></script>
+    <script src="src/estadisticas.js"></script>
+
+</body>
+
+</html>
