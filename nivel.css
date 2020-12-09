@@ -12,11 +12,21 @@ html, body {
 
 .bvolver {
     cursor: pointer;
+    padding: 30px;
+}
+
+.nivelimg {
+    padding-left: 30px;
 }
 
 .titulo {
     font-size: 46px;
     font-weight: 900;
+    padding-left: 30px;
+}
+
+.subtitulo {
+    padding-left: 30px;
 }
 
 * {
@@ -25,14 +35,17 @@ html, body {
 
 .column1 {
     float: left;
-    width: 10%;
+    width: 12%;
     padding: 10px;
+    margin-left: 12%;
 }
 
 .column2 {
     float: left;
-    width: 50%;
+    width: 40%;
     padding: 10px;
+    margin-left: 80px;
+    margin-right: 12%;
 }
 
 .row:after {
@@ -53,12 +66,12 @@ html, body {
 .tooltip {
     position: relative;
     display: inline-block;
-  }
-  
-  .tooltip .tooltiptext {
+}
+
+.tooltip .tooltiptext {
     visibility: hidden;
     width: 240px;
-    background-color: #9C4084;
+    background-color: #9f9f93;
     color: white;
     text-align: left;
     border-radius: 6px;
@@ -71,9 +84,50 @@ html, body {
     font-size: 12px;
     opacity: 0;
     transition: opacity 1s;
-  }
-  
-  .tooltip:hover .tooltiptext {
+}
+
+.tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
-  }
+}
+
+@media screen and (max-width: 1100px) {
+    /* .bvolver {
+        width: 60px;
+    } */
+
+    .nivelimg {
+        width: 80%;
+    }
+    
+    .titulo {
+        font-size: 30px;
+    }
+    
+    .subtitulo {
+        font-size: 20px;
+    }
+
+    .titulo {
+        font-size: 24px;
+        font-weight: 900;
+    }
+    .column1 {
+        width: 12%;
+        padding: 10px;
+        margin-left: 5%;
+    }
+    .column2 {
+        width: 60%;
+        padding: 10px;
+        margin-left: 80px;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .column1 {
+        margin-left: 35%;
+        margin-left: 35%;
+    }
+}

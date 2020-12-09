@@ -25,7 +25,7 @@ html, body, #map {
 }
 
 .button2 {
-    z-index: 900;
+    z-index: 900; 
     position: absolute;
     bottom: 10px;
     left: 50%;

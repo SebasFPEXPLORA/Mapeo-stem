@@ -11,23 +11,23 @@ html, body {
 }
 
 .bvolver {
-    float: left;
-    margin-left: 10px;
+    /* float: left; */
+    margin-left: 30px;
     /* margin-left: 30px; */
-    margin-top: -30px;
+    margin-top: 20px;
     cursor: pointer;
 }
 
 .bcomunas {
     float: right;
-    margin-right: 10px;
-    margin-top: -30px;
+    margin-right: 30px;
+    margin-top: 20px;
     cursor: pointer;
 }
 
 .titulo {
     text-align: center;
-    margin-top: 60px;
+    margin-top: 10px;
     margin-bottom: 20px;
     font-size: 39px;
     font-weight: 900;
@@ -87,6 +87,13 @@ html, body {
     clear: both;
 }
 
+.textochart {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 /* The Modal (background) */
 
 .modal {
@@ -139,9 +146,9 @@ html, body {
 }
 
 @media screen and (max-width: 900px) {
-    .bvolver {
+    /* .bvolver {
         width: 40px;
-    }
+    } */
     .column1 {
         width: 100%;
     }

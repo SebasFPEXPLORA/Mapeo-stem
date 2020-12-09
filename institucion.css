@@ -13,29 +13,33 @@ html, body {
 
 .bvolver {
     cursor: pointer;
+    padding-left: 30px;
+    padding-top: 30px;
 }
 
 .boton {
     cursor: pointer;
+    padding: 30px;
 }
 
-.container1 {
+/* .container1 {
     position: relative;
     left: 30%;
     margin-left: -427px;
     font-size: 32px;
-}
+} */
 
 .column1 {
     float: left;
     width: 30%;
-    padding: 10px;
+    padding-left: 30px;
+padding-top: 10px;
 }
 
 .column2 {
     float: left;
     width: 50%;
-    padding: 10px;
+    padding-top: 10px;
 }
 
 .row:after {
@@ -44,8 +48,13 @@ html, body {
     clear: both;
 }
 
+/* .botones {
+    left: 50%;
+    margin-left: -544px;
+} */
+
 .institucion {
-    margin-top: 20px;
+    margin-top: 0px;
     font-size: 39px;
     font-weight: 900;
 }
@@ -80,9 +89,28 @@ html, body {
 
 .listExp {
     overflow-y: auto;
-    height: 300px;
+    height: 220px;
 }
 
 li {
     margin-left: 50px;
+}
+
+.experiencias {
+    font-size: 18px;
+}
+
+.tituloExp {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.subtituloExp {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.numParticipantes {
+    font-size: 20px;
+    margin-bottom: 20px;    
 }

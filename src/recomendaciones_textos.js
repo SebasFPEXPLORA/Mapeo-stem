@@ -41,7 +41,7 @@
 	{
 		"background": "#DE7342",
 		"titulo": "Recomendaciones Nivel Avanzado Ser + STEM",
-		"subtitulo": "Para hacer sostenible la transformación educativa de tu institución a partir de un enfoque de articulación interdisciplinar y desarrollo de metodologías activas de aprendizaje para el desarrollo de competencias, , te recomendamos:",
+		"subtitulo": "Para hacer sostenible la transformación educativa de tu institución a partir de un enfoque de articulación interdisciplinar y desarrollo de metodologías activas de aprendizaje para el desarrollo de competencias, te recomendamos:",
 		"texto0": "Continuar fortaleciendo y actualizando el uso de las metodologías activas de aprendizaje en todos los procesos de planeación docente.",
 		"texto1": "Mantener y seguir fortaleciendo los procesos de colaboración docente para la articulación de diversas áreas del conocimiento manteniendo el foco en el desarrollo de competencias en los estudiantes.",
 		"texto2": "Proponer un plan de mejora permanente del sistema de evaluación formativa de acuerdo  en  el  que participen  todos los miembros de la comunidad educativa.",
