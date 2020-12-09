@@ -79,7 +79,7 @@ html, body {
 }
 
 .listExp {
-    overflow-y: scroll;
+    overflow-y: auto;
     height: 300px;
 }
 

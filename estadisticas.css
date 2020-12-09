@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 html, body {
     background-color: #F4F3F1;
     margin: 0;
@@ -10,6 +10,18 @@ html, body {
     font-size: 32px;
 }
 
+.bvolver {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.bcomunas {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
 .container1 {
     /* position: relative;
     left: 50%;
@@ -18,10 +30,27 @@ html, body {
 }
 
 .titulo {
+    text-align: center;
     margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 39px;
+    font-weight: 900;
+    color: #219EA6;
 }
 
-.subtitulo {
+.numero {
+    font-size: 48px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.texto {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* .subtitulo {
     margin-top: 0px;
     margin-bottom: 20px;
 }
@@ -40,13 +69,75 @@ html, body {
     cursor: pointer;
 }
 
-.bSerStem {
-    margin-right: 10px;
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-
 .logos {
     margin-left: 573px;
-} 
+}  */
 
+.column1 {
+    float: left;
+    width: 50%;
+    /* padding: 10px; */
+}
+
+/* .column2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+} */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
