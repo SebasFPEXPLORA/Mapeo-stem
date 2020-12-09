@@ -19,8 +19,6 @@ html, body {
     box-sizing: border-box;
 }
 
-/* Create three equal columns that floats next to each other */
-
 .column1 {
     float: left;
     width: 10%;
@@ -33,8 +31,6 @@ html, body {
     padding: 10px;
 }
 
-/* Clear floats after the columns */
-
 .row:after {
     content: "";
     display: table;
@@ -42,10 +38,38 @@ html, body {
 }
 
 .titulo2 {
-    font-size: 24px;
+    font-size: 19px;
     font-weight: 900;
 }
 
 .texto {
-    font-size: 22px;
+    font-size: 16px;
 }
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 240px;
+    background-color: black;
+    color: white;
+    text-align: left;
+    border-radius: 6px;
+    padding: 15px 15px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }

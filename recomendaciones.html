@@ -1,30 +1,104 @@
 ﻿<!DOCTYPE html>
 <html>
-<title>Institución Educativa - Recomendaciones</title>
+<title>Recomendaciones</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="recomendaciones.css">
 
 <body>
-    <div class="container1">
-        <div><img class="titulo" src="assets/index/titulo.png"></div>
-        <div><img class="subtitulo" src="assets/index/subtitulo.png"></div>
-        <!-- <img class="foto" src="assets/index/foto.png">
-        <img class="texto" src="assets/index/texto.png">
-        <div><img class="bresultados" src="assets/index/conoce.png" onclick="location.href='mapa.html'"></div>
-        <img class="bSerStem" src="assets/index/quees.png" onclick=toogleIntroductorio2();>
-        <img class="bSerStem" src="assets/index/participantes.png" onclick=toogleIntroductorio2();>
-        <img class="bSerStem" src="assets/index/contactanos.png" onclick=toogleIntroductorio2();>
-        <div class="logos"><img class="logos2" src="assets/index/logos.png"></div> -->
+
+    <div class="header" id="header" style="background: #20A5D6;">
+        <div><img class="bvolver boton" src="assets/recomendaciones/volverBorde.png"
+                onclick=openInstitucion()>
+        </div>
+        <div class="titulo" id="titulo"></div>
+        <div class="subtitulo" id="subtitulo">
+        </div>
     </div>
 
-    <canvas id="pie-chart" width="800" height="450"></canvas>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css" integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w==" crossorigin="anonymous" /> -->
-    <!-- <script src="lib/Chart.min.js"></script> -->
-    <script src="src/chart2.js"></script>
-
+    <div class="row">
+        <div class="column1 tooltip">
+            <span class="tooltiptext" id="tooltiptext0"></span>
+            <img class="icono" src="assets/nivel/metodologias_activas.png">
+        </div>
+        <div class="column2">
+            <div class="titulo2">Metodologías activas</div>
+            <div class="texto" id="text0"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column1 tooltip">
+            <span class="tooltiptext" id="tooltiptext1"></span>
+            <img class="icono" src="assets/nivel/integracion_curricular.png">
+        </div>
+        <div class="column2">
+            <div class="titulo2">Integración curricular</div>
+            <div class="texto" id="text1"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column1 tooltip">
+            <span class="tooltiptext" id="tooltiptext2"></span>
+            <img class="icono" src="assets/nivel/evaluacion_aprendizajes.png">
+        </div>
+        <div class="column2">
+            <div class="titulo2">Evaluación de aprendizajes</div>
+            <div class="texto" id="text2"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column1 tooltip">
+            <span class="tooltiptext" id="tooltiptext3"></span>
+            <img class="icono" src="assets/nivel/formacion_docentes.png">
+        </div>
+        <div class="column2">
+            <div class="titulo2">Formación de docentes y directivos</div>
+            <div class="texto" id="text3"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column1 tooltip">
+            <span class="tooltiptext" id="tooltiptext4"></span>
+            <img class="icono" src="assets/nivel/liderazgo_institucional.png">
+        </div>
+        <div class="column2">
+            <div class="titulo2">Liderazgo institucional</div>
+            <div class="texto" id="text4"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column1 tooltip">
+            <span class="tooltiptext" id="tooltiptext5"></span>
+            <img class="icono" src="assets/nivel/gestion_conocimiento.png">
+        </div>
+        <div class="column2">
+            <div class="titulo2">Gestión del conocimiento</div>
+            <div class="texto" id="text5"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column1 tooltip">
+            <span class="tooltiptext" id="tooltiptext6"></span>
+            <img class="icono" src="assets/nivel/ambientes_aprendizaje.png">
+        </div>
+        <div class="column2">
+            <div class="titulo2">Ambientes de aprendizaje</div>
+            <div class="texto" id="text6"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column1 tooltip">
+            <span class="tooltiptext" id="tooltiptext7"></span>
+            <img class="icono" src="assets/nivel/alianzas.png">
+        </div>
+        <div class="column2">
+            <div class="titulo2">Alianzas</div>
+            <div class="texto" id="text7"></div>
+    </div>
+    <script src="src/instituciones.js"></script>
+    <script src="src/tooltips.js"></script>
+    <script src="src/recomendaciones_textos.js"></script>
+    <script src="src/recomendaciones.js"></script>
 </body>
 
 </html>

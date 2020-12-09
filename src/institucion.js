@@ -1,3 +1,5 @@
+var i;
+
 (function () {
   "use strict";
 
@@ -5,11 +7,11 @@
     console.log("Init institucion!!");
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-    var i = urlParams.get('i')
+    i = urlParams.get('i')
     if (i == null) {
       i = 0;
     }
-    console.log(Institucion[i][0]);
+    console.log(Institucion[i][0] + " " + Institucion[i][15]);
 
     document.getElementById("institucion").innerHTML = Institucion[i][0];
     document.getElementById("rector").innerHTML = Institucion[i][5];
@@ -43,9 +45,9 @@
             max: 5,
             maxTicksLimit: 6
           },
-            pointLabels: {
-                fontSize: 13
-            }
+          pointLabels: {
+            fontSize: 13
+          }
         },
         legend: {
           display: false,
@@ -59,3 +61,7 @@
   }, false);
 }
   ());
+
+function openRecomendaciones() {
+  location.href = 'recomendaciones.html?i=' + i;
+}
