@@ -16,6 +16,10 @@ html, body {
     font-weight: 900;
 }
 
+.bSerStem {
+    cursor: pointer;
+}
+
 .bnivel {
     margin-bottom: -6px;
     padding: 0;

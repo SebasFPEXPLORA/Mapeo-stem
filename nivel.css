@@ -10,6 +10,10 @@ html, body {
     font-size: 22px;
 }
 
+.bvolver {
+    cursor: pointer;
+}
+
 .titulo {
     font-size: 46px;
     font-weight: 900;
@@ -54,7 +58,7 @@ html, body {
   .tooltip .tooltiptext {
     visibility: hidden;
     width: 240px;
-    background-color: black;
+    background-color: #9C4084;
     color: white;
     text-align: left;
     border-radius: 6px;

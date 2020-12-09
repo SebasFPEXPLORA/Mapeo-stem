@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
 html, body {
     background-color: #F4F3F1;
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;    
 }
 
 .container1 {
@@ -19,6 +24,8 @@ html, body {
 .subtitulo {
     margin-top: 0px;
     margin-bottom: 20px;
+    font-size: 39px;
+    font-weight: 900;
 }
 
 .foto {

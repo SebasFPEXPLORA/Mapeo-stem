@@ -4,26 +4,44 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
 <link rel="stylesheet" href="institucion.css">
- 
+
 <body>
     <div class="container21">
         <div><img class="bvolver" src="assets/institucion/volver.png" onclick="location.href='mapa.html'"></div>
-        
-        <div id="institucion">Institución</div>
-        <div>Rector</div>
-        <div id="rector">Rector</div>
-        <div>Correo electrónico</div>
-        <div id="email">email</div>
-        <div><img class="nivel" id="nivelimg" src="assets/institucion/nivel1.png"></div>
 
-        <canvas id="radar-chart" width="400" height="100"></canvas>
-        
-        <div><img class="bdiagnostico" src="assets/institucion/diagnostico.png"></div>
-        <img class="brecomendaciones" src="assets/institucion/recomendaciones.png" onclick=openRecomendaciones();>
-        <img class="bexperiencias" src="assets/institucion/experiencias.png" onclick=openExperiencias();>
+        <div class="row">
+            <div class="column1">
+                <div class="institucion" id="institucion">Institución</div>
+                <div class="rectorTitulo"> Rector</div>
+                <div class="rector" id="rector">Rector</div>
+                <div class="emailTitulo">Correo electrónico</div>
+                <div class="email" id="email">email</div>
+                <div><img class="nivel" id="nivelimg" src="assets/institucion/nivel1.png"></div>
+            </div>
+            <div class="column2">
+                <canvas id="radar-chart"></canvas>
+                <div class="experiencias" id="experiencias">
+                    <div class="tituloExp">Experiencias Ser + STEM</div>
+                    <div class="subtituloExp">Las experiencias Ser+STEM son prácticas que se han desarrollado en una
+                        institución educativa que favorecen el avance en cualquiera de las dimensiones Ser+STEM.</div>
+                    <div class="numParticipantes" id="numParticipantes">En esta institución los estudiantes están
+                        participando en 0 experiencias Ser+STEM:</div>
+                        <ol class="listExp" id="listExp">
+                        </ol>
+                </div> 
+            </div> 
+        </div>
+    </div>
+    <div>
+        <img class="boton" id="bDiagnostico" src="assets/institucion/diagnostico_on.png" onclick=openDiagnostico();>
+        <img class="boton" src="assets/institucion/recomendaciones.png" onclick=openRecomendaciones();>
+        <img class="boton" id="bExperiencias" src="assets/institucion/experiencias.png" onclick=openExperiencias();>
+    </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+        integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+        crossorigin="anonymous"></script>
     <script src="src/instituciones.js"></script>
     <script src="src/institucion.js"></script>
 

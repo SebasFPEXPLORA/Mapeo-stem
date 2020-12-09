@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 
 html, body {
     background-color: #F4F3F1;
@@ -10,43 +11,78 @@ html, body {
     font-size: 32px;
 }
 
+.bvolver {
+    cursor: pointer;
+}
+
+.boton {
+    cursor: pointer;
+}
+
 .container1 {
     position: relative;
-    left: 50%;
+    left: 30%;
     margin-left: -427px;
     font-size: 32px;
 }
 
-.titulo {
-    margin-top: 20px;
+.column1 {
+    float: left;
+    width: 30%;
+    padding: 10px;
 }
 
-.subtitulo {
+.column2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.institucion {
+    margin-top: 20px;
+    font-size: 39px;
+    font-weight: 900;
+}
+
+.rectorTitulo {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-size: 28px;
+    font-weight: 900;
+    color: #994483;
+}
+
+.rector {
     margin-top: 0px;
     margin-bottom: 20px;
+    font-size: 16px;
 }
 
-.foto {
-    margin-bottom: 126px;
+.emailTitulo {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 28px;
+    font-weight: 900;
+    color: #219EA6;
 }
 
-.texto {
-    margin-left: 18px;
-}
-
-.bresultados {
-    margin-top: 10px;
+.email {
+    margin-top: 0px;
     margin-bottom: 20px;
-    cursor: pointer;
+    font-size: 16px;
 }
 
-.bSerStem {
-    margin-right: 10px;
-    margin-bottom: 10px;
-    cursor: pointer;
+.listExp {
+    overflow-y: scroll;
+    height: 300px;
 }
 
-.logos {
-    margin-left: 573px;
-} 
-
+li {
+    margin-left: 50px;
+}

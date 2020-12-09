@@ -1,4 +1,6 @@
 var i;
+var radarChart;
+var experiencias;
 
 (function () {
   "use strict";
@@ -17,8 +19,20 @@ var i;
     document.getElementById("rector").innerHTML = Institucion[i][5];
     document.getElementById("email").innerHTML = Institucion[i][6];
     document.getElementById("nivelimg").src = "assets/institucion/nivel" + Institucion[i][15] + ".png";
+    radarChart = document.getElementById("radar-chart");
+    experiencias = document.getElementById("experiencias");
+    experiencias.style.display = "none";
 
-    new Chart(document.getElementById("radar-chart"), {
+    document.getElementById("numParticipantes").innerHTML = "En esta institución los estudiantes están participando en " + Institucion[i][16] + " experiencias Ser+STEM:";
+
+    var listExp = document.getElementById("listExp");
+    for (var e = 0; e < Institucion[i][16]; e++) {
+      var li = document.createElement("li");
+      li.appendChild(document.createTextNode(Institucion[i][17 + e]));
+      listExp.appendChild(li);
+    }
+
+    new Chart(radarChart, {
       type: 'radar',
       data: {
         labels: [['Metodologías', 'activas'], ['Integración', 'curricular'], ["Evaluación de", "aprendizajes"], ["Formación", "de maestros", "y directivos"], ["Liderazgo", "institucional"], ["Gestión del", "conocimiento"], ["Ambientes de", "aprendizaje"], ["Alianzas"]],
@@ -62,6 +76,21 @@ var i;
 }
   ());
 
+
+function openDiagnostico() {
+  radarChart.style.display = "block";
+  experiencias.style.display = "none";
+  document.getElementById('bDiagnostico').src = "assets/institucion/diagnostico_on.png";
+  document.getElementById('bExperiencias').src = "assets/institucion/experiencias.png";
+}
+
 function openRecomendaciones() {
   location.href = 'recomendaciones.html?i=' + i;
+}
+
+function openExperiencias() {
+  radarChart.style.display = "none";
+  experiencias.style.display = "block";
+  document.getElementById('bDiagnostico').src = "assets/institucion/diagnostico.png";
+  document.getElementById('bExperiencias').src = "assets/institucion/experiencias_on.png";
 }
