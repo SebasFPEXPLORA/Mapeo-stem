@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
-
 html, body {
     background-color: #F4F3F1;
     margin: 0;
@@ -8,7 +7,7 @@ html, body {
     height: 100%;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
-    font-size: 22px;    
+    font-size: 22px;
 }
 
 .container1 {
@@ -22,10 +21,11 @@ html, body {
 }
 
 .subtitulo {
-    margin-top: 0px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 25px;
     font-size: 39px;
     font-weight: 900;
+    width: 855px;
 }
 
 .foto {
@@ -33,12 +33,32 @@ html, body {
 }
 
 .texto {
-    margin-left: 18px;
+    background-color: #9C4084;
+    color: white;
+    /* width: 400px; */
+    /* margin-left: 18px; */
+    border-radius: 25px 0px 0px 0px; 
+    padding: 20px;
+    font-size: 22px;
 }
 
 .bresultados {
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.resultados {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: #FBD64E;
+    color: #9C4084;
+    width: 818px;
+    /* margin-left: 18px; */
+    border-radius: 40px; 
+    padding: 20px;
+    font-size: 24px;  
+        font-weight: 900;  
 }
 
 .bSerStem {
@@ -48,6 +68,27 @@ html, body {
 }
 
 .logos {
+    margin-top: 0px;
     margin-left: 573px;
-} 
+}
 
+.column1 {
+    float: left;
+    width: 261px;
+    padding: 5px;
+}
+
+.column2 {
+    float: left;
+    width: 578px;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    margin-bottom: -50px;
+}

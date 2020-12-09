@@ -6,48 +6,47 @@
 <link rel="stylesheet" href="estadisticas.css">
 
 <body>
-    <div class="container1">
 
-        <div class="container21">
-            <div>
-                <img class="bvolver" src="assets/institucion/volver.png" onclick="location.href='mapa.html'">
-                <img class="bcomunas" src="assets/estadisticas/elige_comuna.png" onclick=elegirComuna();>
+    <div>
+        <img class="bvolver" src="assets/institucion/volver.png" onclick="location.href='mapa.html'">
+        <img class="bcomunas" src="assets/estadisticas/elige_comuna.png" onclick=elegirComuna();>
+    </div>
+
+    <div class="titulo" id="titulo">Relación instituciones y niveles Ser+STEM</div>
+    <div class="row">
+        <div class="column1">
+            <div class="numero" id="numinstituciones">080</div>
+            <div class="texto">Instituciones</div>
+        </div>
+        <div class="column1">
+            <div class="numero" id="numexperiencias">020</div>
+            <div class="texto">Experiencias</div>
+        </div>
+
+        <div class="row">
+            <div class="column1">
+                <canvas class="pie-chart" id="pie-chart"></canvas>
+            </div>
+            <div class="column1">
+                <canvas id="radar-chart"></canvas>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content" id="modal-content">
+                <span class="close">&times;</span>
             </div>
 
-            <div class="titulo" id="titulo">Relación instituciones y niveles Ser+STEM</div>
-            <div class="row">
-                <div class="column1">
-                    <div class="numero" id="numinstituciones">080</div>
-                    <div class="texto">Instituciones</div>
-                </div>
-                <div class="column1">
-                    <div class="numero" id="numexperiencias">020</div>
-                    <div class="texto">Experiencias</div>
-                </div>
+        </div>
+    </div>
 
-                <div class="row">
-                    <div class="column1">
-                        <canvas id="pie-chart"></canvas>
-                    </div>
-                    <div class="column1">
-                        <canvas id="radar-chart"></canvas>
-                    </div>
-                </div>
-
-                <div id="myModal" class="modal">
-
-                    <!-- Modal content -->
-                    <div class="modal-content" id="modal-content">
-                        <span class="close">&times;</span>
-                    </div>
-
-                </div>
-
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
-                    integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
-                    crossorigin="anonymous"></script>
-                <script src="src/instituciones.js"></script>
-                <script src="src/estadisticas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+        integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+        crossorigin="anonymous"></script>
+    <script src="src/instituciones.js"></script>
+    <script src="src/estadisticas.js"></script>
 
 </body>
 

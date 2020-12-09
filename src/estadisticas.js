@@ -29,7 +29,7 @@ var modalContent;
       buttons[i] = document.createElement("img");
       buttons[i].src = "assets/estadisticas/" + i + ".png";
       buttons[i].index = i;
-      buttons[i].style.padding = "10px 10px 10px 10px";
+      buttons[i].style.padding = "0px 10px 5px 0px";
       modalContent.appendChild(buttons[i]);
       buttons[i].addEventListener("click", function () {
         comuna = this.index;

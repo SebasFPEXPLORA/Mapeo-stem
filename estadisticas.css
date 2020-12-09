@@ -11,27 +11,23 @@ html, body {
 }
 
 .bvolver {
-    margin-right: 10px;
-    margin-bottom: 10px;
+    float: left;
+    margin-left: 10px;
+    /* margin-left: 30px; */
+    margin-top: -30px;
     cursor: pointer;
 }
 
 .bcomunas {
+    float: right;
     margin-right: 10px;
-    margin-bottom: 10px;
+    margin-top: -30px;
     cursor: pointer;
-}
-
-.container1 {
-    /* position: relative;
-    left: 50%;
-    margin-left: -427px; */
-    font-size: 32px;
 }
 
 .titulo {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 60px;
     margin-bottom: 20px;
     font-size: 39px;
     font-weight: 900;
@@ -100,7 +96,7 @@ html, body {
     /* Stay in place */
     z-index: 1;
     /* Sit on top */
-    padding-top: 100px;
+    padding-top: 30px;
     /* Location of the box */
     left: 0;
     top: 0;
@@ -124,6 +120,7 @@ html, body {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    overflow: auto;
 }
 
 /* The Close Button */
@@ -135,9 +132,20 @@ html, body {
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    .bvolver {
+        width: 40px;
+    }
+    .column1 {
+        width: 100%;
+    }
+    .pie-chart {
+        margin-bottom: 30px;
+    }
 }

@@ -16,7 +16,7 @@
 		"background": "#994483",
 		"titulo": "Recomendaciones Nivel Introductorio Ser + STEM",
 		"subtitulo": "Para fortalecer  la transformación educativa de tu institución a partir de un enfoque de articulación interdisciplinar y desarrollo de metodologías activas de aprendizaje para el desarrollo de competencias, te recomendamos:",
-		"texto0": ": Hacer de las metodologías activas de aprendizaje una herramienta de uso frecuente para dirigir el trabajo en el aula.",
+		"texto0": "Hacer de las metodologías activas de aprendizaje una herramienta de uso frecuente para dirigir el trabajo en el aula.",
 		"texto1": "Realizar ejercicios de planeación colaborativa entre docentes que conlleven a activar la articulación entre, al menos, cuatro áreas con el objetivo de fomentar las competencias de los estudiantes.",
 		"texto2": "Ampliar decididamente la implementación de procesos de evaluación formativa, haciendo uso de múltiples métodos cualitativos y cuantitativos con la participación de maestros, estudiantes y sus pares.",
 		"texto3": "Consolidar un plan de desarrollo profesional docente en metodologías activas de aprendizaje, competencias siglo XXI e integración de áreas, para todos los maestros y directivos  docentes  de la institución.",
