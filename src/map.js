@@ -9,7 +9,6 @@ var instituciones = [];
 
     document.addEventListener('DOMContentLoaded', function () {
         var ImageSize = { width: 5898, height: 4443 };
-        console.log("Init map");
         map = L.map('map', {
             crs: L.CRS.Simple,
             zoomSnap: 0.1,
@@ -26,11 +25,11 @@ var instituciones = [];
             icons[i] = L.icon({
                 iconUrl: 'assets/mapa/p' + i + '.png',
                 shadowUrl: 'assets/mapa/psombra.png',
-                iconSize: [26, 39], // size of the icon
-                shadowSize: [46, 33], // size of the shadow
-                iconAnchor: [13, 40], // point of the icon which will correspond to marker's location
-                shadowAnchor: [8, 26],  // the same for the shadow
-                popupAnchor: [20, -42], // point from which the popup should open relative to the iconAnchor
+                iconSize: [26, 39], 
+                shadowSize: [46, 33], 
+                iconAnchor: [13, 40], 
+                shadowAnchor: [8, 26],  
+                popupAnchor: [20, -42], 
                 tooltipAnchor: [12, -30]
             });
         }
@@ -38,10 +37,10 @@ var instituciones = [];
         var yx = L.latLng;
 
         var xy = function (x, y) {
-            if (L.Util.isArray(x)) {    // When doing xy([x, y]);
+            if (L.Util.isArray(x)) { 
                 return yx(x[1], x[0]);
             }
-            return yx(y, x);  // When doing xy(x, y);
+            return yx(y, x);  
         };
 
         var bounds = [xy(0, 0), xy(ImageSize.width, ImageSize.height)];
@@ -140,17 +139,10 @@ function zoomMenos() {
 
 function buscar() {
     var palabra = (document.getElementById("fname").value).toLowerCase();
-    console.log(palabra);
-    if (palabra.length > 0) {
-        // document.getElementById('bExploratorio').src = "assets/mapa/exploratorio_on.png";
-        // document.getElementById('bIntroductorio').src = "assets/mapa/introductorio_on.png";
-        // document.getElementById('bIntermedio').src = "assets/mapa/intermedio_on.png";
-        // document.getElementById('bAvanzado').src = "assets/mapa/avanzado_on.png";
-        for (i = 0; i < Institucion.length; i++) {
-            if ((Institucion[i][0].toLowerCase()).includes(palabra))
-                this.map.addLayer(instituciones[i]);
-            else
-                map.removeLayer(instituciones[i]);
-        }
+    for (i = 0; i < Institucion.length; i++) {
+        if ((Institucion[i][0].toLowerCase()).includes(palabra))
+            this.map.addLayer(instituciones[i]);
+        else
+            map.removeLayer(instituciones[i]);
     }
 }

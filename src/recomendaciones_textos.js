@@ -6,7 +6,7 @@
 		"texto0": "Planear actividades que vinculen metodologías activas de aprendizaje durante la jornada escolar para complementar el plan de área.",
 		"texto1": "Realizar ejercicios de planeación colaborativa entre docentes que conlleven a la articulación entre, al menos, tres áreas, enfocados en fomentar el desarrollo de competencias en los estudiantes.",
 		"texto2": "Implementar procesos de evaluación formativa en los que se tenga en cuenta la autoevaluación de los estudiantes y la valoración del maestro",
-		"texto3": " Implementar un proceso de formación en metodologías activas de aprendizaje, competencias siglo XXI o integración de áreas abierto a los maestros de la institución.",
+		"texto3": "Implementar un proceso de formación en metodologías activas de aprendizaje, competencias siglo XXI o integración de áreas abierto a los maestros de la institución.",
 		"texto4": "Involucrar a los directivos docentes en la planeación e implementación de actividades que implican metodologías activas de aprendizaje.",
 		"texto5": "Sistematizar las experiencias de los maestros que han implementado prácticas con metodologías activas de aprendizaje.",
 		"texto6": "Adecuar el 25%  de las aulas para favorecer la implementación de metodologías activas de aprendizaje.",

@@ -6,14 +6,12 @@ var experiencias;
   "use strict";
 
   document.addEventListener('DOMContentLoaded', function () {
-    console.log("Init institucion!!");
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     i = urlParams.get('i')
     if (i == null) {
       i = 0;
     }
-    console.log(Institucion[i][0] + " " + Institucion[i][15]);
 
     document.getElementById("institucion").innerHTML = Institucion[i][0];
     document.getElementById("rector").innerHTML = Institucion[i][5];

@@ -51,22 +51,15 @@ var modalContent;
   ());
 
 function elegirComuna() {
-  // comuna = Math.floor(Math.random() * 10) + 1;
-  // updatePie(comuna);
-
-  // When the user clicks the button, open the modal 
-
   modal.style.display = "block";
 }
 
 function updatePie(value) {
   if (piechart) {
     piechart.destroy();
-    console.log("destroy piechart");
   }
   if (radarchart) {
     radarchart.destroy();
-    console.log("destroy radarchart");
   }
   comuna = value;
   for (i = 0; i < 4; i++) {
@@ -118,7 +111,7 @@ function updatePie(value) {
     options: {
       elements: {
         arc: {
-          borderWidth: 0, // <-- Set this to zero
+          borderWidth: 0, 
           borderColor: '#333'
         }
       },
@@ -199,8 +192,6 @@ function updatePie(value) {
       }
     }
   });
-
-
 }
 
 

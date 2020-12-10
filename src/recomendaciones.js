@@ -4,7 +4,6 @@ var e;
   "use strict";
 
   document.addEventListener('DOMContentLoaded', function () {
-    console.log("Init institucion!!");
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     e = urlParams.get('i')
@@ -13,7 +12,6 @@ var e;
     }
     var nivel = Institucion[e][15];
     var i = nivel - 1;
-    console.log(Institucion[e][0] + " " + nivel);
 
     document.getElementById("header").style.background = Recomendacion[i].background;
     document.title = Recomendacion[i].titulo;
@@ -37,11 +35,10 @@ var e;
     document.getElementById("text5").innerHTML = Recomendacion[i].texto5;
     document.getElementById("text6").innerHTML = Recomendacion[i].texto6;
     document.getElementById("text7").innerHTML = Recomendacion[i].texto7;
- 
-    // document.getElementById("nivelimg").src = "assets/institucion/nivel" + Institucion[i][15] + ".png";
+
   }, false);
 }
-  ()); 
+  ());
 
 function openInstitucion() {
   location.href = 'institucion.html?i=' + e;
