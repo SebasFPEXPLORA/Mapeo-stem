@@ -38,10 +38,10 @@ var experiencias;
           {
             label: "",
             fill: true,
-            backgroundColor: "rgba(179,181,198,0.2)",
-            borderColor: "rgba(153,0,255,1)",
-            pointBorderColor: "#9900FF",
-            pointBackgroundColor: "rgba(153,0,255,1)",
+            backgroundColor: "rgba(153,68,131,0.1)",
+            borderColor: "#994483",
+            pointBorderColor: "#994483",
+            pointBackgroundColor: "#994483",
             pointRadius: 5,
             data: [Institucion[i][7], Institucion[i][8], Institucion[i][9], Institucion[i][10], Institucion[i][11], Institucion[i][12], Institucion[i][13], Institucion[i][14]]
           }

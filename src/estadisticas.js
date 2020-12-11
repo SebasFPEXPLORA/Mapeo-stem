@@ -104,7 +104,7 @@ function updatePie(value) {
       labels: ["Exploratorio", "Introductorio", "Intermedio", "Avanzado"],
       datasets: [{
         label: "Nivel Stem",
-        backgroundColor: ["#DE7342", "#FBD55B", "#219EA6", "#994483"],
+        backgroundColor: ["#219EA6", "#994483", "#FBD55B", "#DE7342"],
         data: [cantidad[0], cantidad[1], cantidad[2], cantidad[3]]
       }]
     },
@@ -131,11 +131,21 @@ function updatePie(value) {
           label: "Exploratorio",
           fill: true,
           backgroundColor: "rgba(179,181,198,0)",
-          borderColor: "#DE7342",
-          pointBorderColor: "#DE7342",
-          pointBackgroundColor: "#DE7342",
+          borderColor: "#219EA6",
+          pointBorderColor: "#219EA6",
+          pointBackgroundColor: "#219EA6",
           pointRadius: 5,
           data: [puntos[0][0], puntos[0][1], puntos[0][2], puntos[0][3], puntos[0][4], puntos[0][5], puntos[0][6], puntos[0][7]]
+        },
+        {
+          label: "",
+          fill: true,
+          backgroundColor: "rgba(179,181,198,0)",
+          borderColor: "#994483",
+          pointBorderColor: "#994483",
+          pointBackgroundColor: "#994483",
+          pointRadius: 5,
+          data: [puntos[1][0], puntos[1][1], puntos[1][2], puntos[1][3], puntos[1][4], puntos[1][5], puntos[1][6], puntos[1][7]]
         },
         {
           label: "",
@@ -145,25 +155,15 @@ function updatePie(value) {
           pointBorderColor: "#FBD55B",
           pointBackgroundColor: "#FBD55B",
           pointRadius: 5,
-          data: [puntos[1][0], puntos[1][1], puntos[1][2], puntos[1][3], puntos[1][4], puntos[1][5], puntos[1][6], puntos[1][7]]
-        },
-        {
-          label: "",
-          fill: true,
-          backgroundColor: "rgba(179,181,198,0)",
-          borderColor: "#219EA6",
-          pointBorderColor: "#219EA6",
-          pointBackgroundColor: "#219EA6",
-          pointRadius: 5,
           data: [puntos[2][0], puntos[2][1], puntos[2][2], puntos[2][3], puntos[2][4], puntos[2][5], puntos[2][6], puntos[2][7]]
         },
         {
           label: "",
           fill: true,
           backgroundColor: "rgba(179,181,198,0)",
-          borderColor: "#994483",
-          pointBorderColor: "#994483",
-          pointBackgroundColor: "#994483",
+          borderColor: "#DE7342",
+          pointBorderColor: "#DE7342",
+          pointBackgroundColor: "#DE7342",
           pointRadius: 5,
           data: [puntos[3][0], puntos[3][1], puntos[3][2], puntos[3][3], puntos[3][4], puntos[3][5], puntos[3][6], puntos[3][7]]
         }

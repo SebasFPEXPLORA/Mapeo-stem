@@ -8,24 +8,24 @@
 <body>
     <div id="map"></div>
 
-    <div class="button">
-        <img id="bInicio" src="assets/mapa/Inicio.png" onclick="location.href='index.html'">
-        <img id="bInstituciones" src="assets/mapa/instituciones_on.png">
-        <img id="bSerStem" src="assets/mapa/quees.png" onclick="location.href='ser-stem.html'">
-        <img id="bContactanos" src="assets/mapa/contactanos.png" onclick=toogleIntroductorio2();>
-        <img id="bBusqueda" src="assets/mapa/buscar.png">
+    <div class="buttonGroup1">
+        <img class="button" id="bInicio" src="assets/mapa/inicio.png" onclick="location.href='index.html'">
+        <img class="button" id="bInstituciones" src="assets/mapa/instituciones_on.png">
+        <img class="button" id="bSerStem" src="assets/mapa/quees.png" onclick="location.href='ser-stem.html'">
+        <img class="button" id="bContactanos" src="assets/mapa/contactanos.png" onclick="location.href='contactanos.html'">
+        <img class="buttonBusqueda" id="bBusqueda" src="assets/mapa/buscar.png">
         <input class="busqueda" type="text" id="fname" name="fname" oninput="buscar()"></input> 
     </div> 
   
-    <div class="button2">
-        <img id="bEstadisticas" src="assets/mapa/estadisticas.png" onclick="location.href='estadisticas.html'">
-        <img id="bExploratorio" src="assets/mapa/exploratorio.png" onclick=toogleExploratorio();>
-        <img id="bIntroductorio" src="assets/mapa/introductorio.png" onclick=toogleIntroductorio();>
-        <img id="bIntermedio" src="assets/mapa/intermedio.png" onclick=toogleIntermedio();>
-        <img id="bAvanzado" src="assets/mapa/avanzado.png" onclick=toogleAvanzado();>
+    <div class="buttonGroup2">
+        <img class="button" id="bEstadisticas" src="assets/mapa/estadisticas.png" onclick="location.href='estadisticas.html'">
+        <img class="button" id="bExploratorio" src="assets/mapa/exploratorio.png" onclick=toogleExploratorio();>
+        <img class="button" id="bIntroductorio" src="assets/mapa/introductorio.png" onclick=toogleIntroductorio();>
+        <img class="button" id="bIntermedio" src="assets/mapa/intermedio.png" onclick=toogleIntermedio();>
+        <img class="button" id="bAvanzado" src="assets/mapa/avanzado.png" onclick=toogleAvanzado();>
     </div>   
   
-    <div class="button3">
+    <div class="buttonGroup3">
         <img id="bMas" src="assets/mapa/mas.png" onclick=zoomMas();>
         <img id="bMenos" src="assets/mapa/menos.png" onclick=zoomMenos();>
     </div>

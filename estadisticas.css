@@ -11,9 +11,7 @@ html, body {
 }
 
 .bvolver {
-    /* float: left; */
     margin-left: 30px;
-    /* margin-left: 30px; */
     margin-top: 20px;
     cursor: pointer;
 }
@@ -44,18 +42,6 @@ html, body {
     font-size: 24px;
     text-align: center;
     margin-bottom: 20px;
-}
-
-/* .subtitulo {
-    margin-top: 0px;
-    margin-bottom: 20px;
-}
-
-.foto {
-    margin-bottom: 126px;
-}
-
-.texto {
     margin-left: 18px;
 }
 
@@ -67,19 +53,12 @@ html, body {
 
 .logos {
     margin-left: 573px;
-}  */
+}
 
 .column1 {
     float: left;
     width: 50%;
-    /* padding: 10px; */
 }
-
-/* .column2 {
-    float: left;
-    width: 50%;
-    padding: 10px;
-} */
 
 .row:after {
     content: "";
@@ -94,32 +73,19 @@ html, body {
     margin-bottom: 20px;
 }
 
-/* The Modal (background) */
-
 .modal {
     display: none;
-    /* Hidden by default */
     position: fixed;
-    /* Stay in place */
     z-index: 1;
-    /* Sit on top */
     padding-top: 30px;
-    /* Location of the box */
     left: 0;
     top: 0;
     width: 100%;
-    /* Full width */
     height: 100%;
-    /* Full height */
     overflow: auto;
-    /* Enable scroll if needed */
     background-color: rgb(0, 0, 0);
-    /* Fallback color */
     background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/ opacity */
 }
-
-/* Modal Content */
 
 .modal-content {
     background-color: #fefefe;
@@ -129,8 +95,6 @@ html, body {
     width: 80%;
     overflow: auto;
 }
-
-/* The Close Button */
 
 .close {
     color: #aaaaaa;
@@ -146,9 +110,12 @@ html, body {
 }
 
 @media screen and (max-width: 900px) {
-    /* .bvolver {
-        width: 40px;
-    } */
+    .bvolver {
+        height: 40px;
+    }
+    .bcomunas {
+        height: 40px;
+    }
     .column1 {
         width: 100%;
     }
